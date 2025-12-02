@@ -1,0 +1,20 @@
+{
+  "name": "teacupnet-lib",
+  "version": "1.0.0",
+  "description": "A library for connecting to teacupnet ",
+  "homepage": "https://github.com/tahmidjihan/teacupnet-lib#readme",
+  "bugs": {
+    "url": "https://github.com/tahmidjihan/teacupnet-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahmidjihan/teacupnet-lib.git"
+  },
+  "license": "ISC",
+  "author": "Tahmid Jihan, Teacupnet",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
