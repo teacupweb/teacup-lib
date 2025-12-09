@@ -10,9 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/tahmidjihan/teacupnet-lib.git"
   },
+  "exports": "./index.js",
   "license": "ISC",
   "author": "Tahmid Jihan, Teacupnet",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,32 +1,25 @@
-const data = require('./Controllers/data.controller');
+import dataController from './Controllers/data.controller.js';
+import analytics from './Analytics/analytics.controller.js';
 
-class tc {
-  #clientId;
-  #clientKey;
-  constructor(clientId, clientKey) {
-    // this.name = "tc";
-    this.#clientId = clientId;
-    this.#clientKey = clientKey;
+export const initial = {
+  clientEmail: '',
+  clientKey: '',
+};
+
+function init(clientEmail, clientKey) {
+  // return new tc(clientId, clientKey);
+  if (!clientEmail || !clientKey) {
+    return {
+      error: 'Invalid Credentials',
+      message: 'Please provide clientEmail and clientKey',
+    };
   }
-  // basic methods
-  static data = class {
-    sendInbox(id, data) {
-      return data.postInbox(id, data);
-    }
-    blogs(email) {
-      // console.log('here is the blogs');
-      return data.getBlogs(email);
-    }
-    blog(email, id) {
-      // console.log('here is the blog');
-      return data.getBlog(email, id);
-    }
-  };
-  // analytics
-  static analytics = class {
-    // future methods
-    track() {}
+  initial.clientEmail = clientEmail;
+  initial.clientKey = clientKey;
+  return {
+    data: dataController,
+    analytics: analytics,
   };
 }
-// module.exports = tc;
-exports.default = tc;
+
+export default init;
