@@ -1,7 +1,9 @@
 import fetchAPI from '../Functions/FetchAPI';
-function save(type, data) {
-  return fetchAPI(`api/analytics/${type}`, 'POST', {
+import fingerprint from './fingerprint';
+export default function save() {
+  return fetchAPI(`api/analytics`, 'PUT', {
     data: data,
+    fingerprint: fingerprint(),
   });
 }
-export default { save };
+// export default { save };
