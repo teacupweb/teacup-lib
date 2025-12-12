@@ -1,9 +1,9 @@
 import trackClicks from './services/click.service';
 import page from './services/page.service';
 import forms from './services/forms.service';
-function track(id) {
+function track() {
   // console.log('tracking begins right here');
-  const body = document.getElementById(id);
+  // const body = document.getElementById(id);
 
   //clicks
   trackClicks();
