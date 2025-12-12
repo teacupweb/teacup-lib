@@ -1,7 +1,9 @@
 import trackClicks from './services/click.service';
 import page from './services/page.service';
 import forms from './services/forms.service';
+import fingerprint from './fingerprint';
 function track() {
+  console.log(fingerprint());
   // console.log('tracking begins right here');
   // const body = document.getElementById(id);
 

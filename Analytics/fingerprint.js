@@ -1,14 +1,10 @@
-const fpPromise = import('https://openfpcdn.io/fingerprintjs/v5').then(
-  (FingerprintJS) => FingerprintJS.load()
-);
+export default function fingerprint() {
+  const canvas = document.createElement('canvas');
+  canvas.width = 20;
+  canvas.height = 2220;
+  const ctx = canvas.getContext('2d');
+  ctx.fillText('Hello', 10, 10);
 
-// Get the visitor identifier when you need it.
-fpPromise
-  .then((fp) => fp.get())
-  .then((result) => {
-    // This is the visitor identifier:
-    const visitorId = result.visitorId;
-    console.log(visitorId);
-  });
-
-function create() {}
+  const data = canvas.toDataURL();
+  return data.slice(-32);
+}

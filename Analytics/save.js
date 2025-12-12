@@ -4,3 +4,4 @@ function save(type, data) {
     data: data,
   });
 }
+export default { save };
