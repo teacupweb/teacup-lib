@@ -4,7 +4,11 @@ function trackRoute() {
   ['pushState', 'replaceState'].forEach((method) => {
     const original = history[method];
     history[method] = function () {
-      path = window.location.pathname;
+      // path = window.location.pathname;
+      data.setData('page', {
+        page: window.location.pathname,
+        percentage: 0,
+      });
       return original.apply(this, arguments);
     };
   });
@@ -30,9 +34,9 @@ function trackPageView() {
   return topPercent;
 }
 function track() {
-  const route = trackRoute();
+  const route = trackRoute() || window.location.pathname;
   const percentage = trackPageView();
-
+  console.log(route);
   data.setData('page', {
     page: route,
     percentage: percentage,

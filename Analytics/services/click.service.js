@@ -1,6 +1,6 @@
 import data from './../data.controller';
 
-export default function trackClicks() {
+function track() {
   addEventListener('click', (e) => {
     if (e.target.tagName == 'BUTTON') {
       // console.log('button clicked: ' + e.target.innerText);
@@ -13,3 +13,4 @@ export default function trackClicks() {
     }
   });
 }
+export default { track };
