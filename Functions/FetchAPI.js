@@ -10,10 +10,9 @@ export default async function fetchAPI(path, method = 'GET', body = null) {
 
   try {
     const data = await fetch(
-      `https://teacupnet-backend.vercel.app/${path}`,
+      `https://backend.teacup.website/${path}`,
       req
     );
-    // const data = await fetch(`http://localhost:3000/${path}`, req);
     return await data.json();
   } catch (error) {
     console.log(error);

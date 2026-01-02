@@ -1,11 +1,11 @@
 {
-  "name": "teacupnet-lib",
-  "version": "1.1.1",
-  "description": "A powerful JavaScript library for integrating TeacupNet analytics and data management. Track user interactions, page views, form completions, and seamlessly connect to the TeacupNet backend.",
+  "name": "teacup-lib",
+  "version": "1.0.0",
+  "description": "A powerful JavaScript library for integrating Teacup analytics and data management. Track user interactions, page views, form completions, and seamlessly connect to the Teacup backend.",
   "keywords": [
     "analytics",
     "tracking",
-    "teacupnet",
+    "teacup",
     "user-analytics",
     "form-tracking",
     "page-tracking",
@@ -14,16 +14,16 @@
     "fingerprinting",
     "web-analytics"
   ],
-  "homepage": "https://github.com/tahmidjihan/teacupnet-lib#readme",
+  "homepage": "https://github.com/tahmidjihan/teacup-lib#readme",
   "bugs": {
-    "url": "https://github.com/tahmidjihan/teacupnet-lib/issues"
+    "url": "https://github.com/tahmidjihan/teacup-lib/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tahmidjihan/teacupnet-lib.git"
+    "url": "git+https://github.com/tahmidjihan/teacup-lib.git"
   },
   "license": "ISC",
-  "author": "Tahmid Jihan, Teacupnet",
+  "author": "Tahmid Jihan, Teacup",
   "type": "module",
   "main": "index.js",
   "exports": "./index.js",
