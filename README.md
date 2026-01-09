@@ -319,8 +319,8 @@ if (client.error) {
 
 For issues, questions, or feature requests:
 
-- GitHub Issues: [https://github.com/tahmidjihan/teacup-lib/issues](https://github.com/tahmidjihan/teacup-lib/issues)
-- Repository: [https://github.com/tahmidjihan/teacup-lib](https://github.com/tahmidjihan/teacup-lib)
+- GitHub Issues: [https://github.com/teacupweb/teacup-lib/issues](https://github.com/teacupweb/teacup-lib/issues)
+- Repository: [https://github.com/teacupweb/teacup-lib](https://github.com/teacupweb/teacup-lib)
 - Website: [https://teacup.website](https://teacup.website)
 
 ## License
