@@ -10,8 +10,9 @@ export default async function fetchAPI(path, method = 'GET', body = null) {
 
   try {
     const data = await fetch(
-      `https://backend.teacup.website/${path}`,
-      req
+      // `https://backend.teacup.website/${path}`,
+      `http://localhost:8000/${path}`,
+      req,
     );
     return await data.json();
   } catch (error) {

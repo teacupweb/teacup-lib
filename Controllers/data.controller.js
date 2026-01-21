@@ -16,6 +16,7 @@ const postData = async (id, data) => {
   return await fetchAPI('api/inboxData', 'POST', {
     inbox_id: id,
     data: data,
+    initial: initial,
   });
 };
 

@@ -6,7 +6,7 @@ import { initial } from '..';
 export default function save() {
   setInterval(() => {
     const newData = data.getNewData();
-    
+
     // Check if there's any new data to send
     const hasNewData =
       newData.button.length > 0 ||
@@ -16,10 +16,10 @@ export default function save() {
     if (hasNewData) {
       fetchAPI('api/analytics', 'POST', {
         data: newData,
-        initial: initial,
         fingerprint: fingerprint(),
+        initial: initial,
       });
-      
+
       // Clear data after sending
       data.clearData();
     }
